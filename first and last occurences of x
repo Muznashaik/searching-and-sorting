@@ -1,0 +1,9 @@
+c=[]
+if x in arr:
+            for i in range(n):
+                if arr[i]==x:
+                    c.append(i)
+            return c[0],c[-1]
+        else:
+            return -1,-1
+to reduce the time complexity we can also do it in binary search...
