@@ -1,0 +1,7 @@
+#bruteforce
+for i in range(n):
+        if arr[i]==k:
+            return i
+    else:
+        return -1
+    
