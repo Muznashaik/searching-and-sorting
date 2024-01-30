@@ -1,0 +1,11 @@
+sum_x=n*(n+1)//2
+new_sum=sum(arr)
+seen=set()
+dup=0
+for i in arr:
+    if i in seen:
+        dup=i
+        break
+    seen.add(i)
+miss=sum_x-new_sum+dup
+return dup,miss
