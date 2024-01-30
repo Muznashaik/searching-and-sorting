@@ -1,0 +1,8 @@
+def middle(self,A,B,C):
+        z=min(A,B,C)
+        x=max(A,B,C)
+        c=[z,x]
+        b=[A,B,C]
+        for i in b:
+            if i not in c:
+                return i
