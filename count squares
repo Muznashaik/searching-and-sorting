@@ -1,0 +1,4 @@
+if N==0:
+      return 0
+return int(math.sqrt(N-1))
+        
