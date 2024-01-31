@@ -1,0 +1,8 @@
+def findPair(self, arr, L,N):
+        #code here
+        s=set()
+        for i in arr:
+            if N+i in s or i-N in s:
+                return True
+            s.add(i)
+        return False
