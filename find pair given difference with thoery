@@ -1,0 +1,17 @@
+We define a function findPair that takes an array arr and a number N as input.
+
+Inside the function, we create an empty set s to store the elements of the array that we have seen so far.
+
+We then iterate through each element element in the array arr using a for loop.
+
+For each element, we check if either N + element or element - N is already in the set s. If either of these conditions is true, it means we have found a pair of elements in the array whose difference is N, so we return True from the function.
+
+If we have not found a pair after iterating through all elements, we return False from the function, indicating that no such pair exists in the array.
+def findPair(self, arr, L,N):
+        #code here
+        s=set()
+        for i in arr:
+            if N+i in s or i-N in s:
+                return True
+            s.add(i)
+        return False
